@@ -195,11 +195,11 @@ public class MainActivity extends BaseActivity {
                     return likeMusicFragment.newInstance();
                 }
                 return likeMusicFragment;
-            }else if (position == 3){
-                if (netMusicListFragment == null) {
-                    return netMusicListFragment.newInstance();
+            }else if (position == 4){
+                if (myMusicListFragment == null) {
+                    return myMusicListFragment.newInstance();
                 }
-                return netMusicListFragment;
+                return myMusicListFragment;
             }
             return myMusicListFragment.newInstance();
         }
