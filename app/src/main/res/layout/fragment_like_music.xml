@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView_my_music"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/linearLayout"
+        />
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2d2c2c"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/imageView_albumIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:src="@mipmap/music"
+            />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutSong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageView_albumIcon"
+            android:layout_toLeftOf="@+id/imageView_play_pause"
+            android:background="#2d2c2c"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_weight="0.63">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:id="@+id/textView_songName"
+                android:text="☞宝宝的专属播放器 \\(^o^)/~"
+                android:textColor="#00ffdd"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_singer"
+                android:text="♪(＾∀＾●)ﾉ♪"
+                android:textSize="12sp"
+                android:textColor="#00ffdd"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/linearLayoutPlay"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:background="#2d2c2c"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginBottom="10dp">-->
+
+        <!--</LinearLayout>-->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_play_pause"
+            android:src="@mipmap/play"
+            android:layout_toLeftOf="@+id/imageView_next"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageView_next"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/player_btn_next_normal"
+            android:layout_gravity="center_vertical" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
